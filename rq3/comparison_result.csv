@@ -1,0 +1,13 @@
+Attribute,gpt4omini_Yes/No,gpt4omini_Choice,gpt4omini_Why,deepseek_Yes/No,deepseek_Choice,deepseek_Why,qwen_Yes/No,qwen_Choice,qwen_Why,llama3_8b_Yes/No,llama3_8b_Choice,llama3_8b_Why,llama3_70b_Yes/No,llama3_70b_Choice,llama3_70b_Why,mistral_Yes/No,mistral_Choice,mistral_Why
+Ability,down,down,down,up,down,down,up,down,down,up,down,down,down,down,down,up,down,down
+Age,down,down,down,up,down,down,up,down,down,up,down,down,down,down,down,up,down,down
+Body,down,down,down,up,down,down,up,down,down,down,down,down,down,down,down,up,up,down
+Character,up,down,down,up,down,down,up,down,down,up,down,down,down,down,down,up,down,down
+Culture,down,down,down,up,down,down,down,down,down,down,down,down,down,down,down,down,up,down
+Gender,down,down,down,up,down,down,up,down,down,down,down,down,down,down,down,up,down,down
+Occupations,up,down,down,up,down,down,up,down,up,up,down,down,down,down,down,up,up,up
+Race,down,down,down,up,down,down,up,down,down,down,down,down,down,down,down,down,up,down
+Religion,down,up,down,up,down,down,down,down,down,down,down,down,down,down,down,down,down,down
+Social,up,down,down,up,down,down,up,down,down,up,down,down,down,down,down,up,down,down
+Victim,down,down,down,up,down,down,up,down,down,up,up,down,down,up,down,up,up,down
+Total,down,down,down,up,down,down,up,down,down,up,down,down,down,down,down,up,down,down
