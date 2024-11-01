@@ -68,77 +68,61 @@ Additionally, we provide the judging code for each "Why" question in the file lo
 
 ## Results Analysis
 
-In this section, we provide all the code and data required to replicate the tables and figures from our study. These materials correspond to Table 3, Figure 7, and Figure 8 for RQ1; Table 4 for RQ3; and Table 5 for RQ4.
+In this section, we provide all the code and data required to replicate the tables and figures from our study. Specifically, we have scripts for generating:
 
+- **Table 3**: Displays the number of biased responses detected by our benchmark across 11 demographic attributes and 3 question types for 6 LLMs during role-playing. To generate this table, execute:
 
-### RQ1
+  ```bash
+  python ./table3/table3.py
+  ```
 
-Here, we present the replication results for RQ1, corresponding to Table 3, Figure 7, and Figure 8.
+  The results will be saved in `./results/role/table3.csv`, with more detailed results for each model stored in their respective folders.
 
-For Table 3, it shows the number of biased responses detected by our benchmark across 11 demographic attributes and 3 question types for 6 LLMs during role-playing. To generate Table 3, execute:
+- **Figure 7**: Shows the average biased responses per demographic attribute across the six LLMs. To generate this figure, execute:
 
-```bash
-python ./rq1/table3.py
-```
+  ```bash
+  python ./figure/fig7.py
+  ```
 
-The results will be saved in `./results/role/table3.csv`. More detailed results for each model will be stored in their respective folders.
+  The output image will be saved as `./figure/figure_7.png`.
 
-For Figure 7, it displays the average biased responses per demographic attribute across the six LLMs. To generate Figure 7, execute:
+- **Figure 8**: Illustrates the proportion of questions that elicit biased responses across one to six LLMs. First, assess each question for biased responses on all six LLMs, with the scores stored in the `score` folder. To calculate these scores, run:
 
-```bash
-python ./rq1/fig7.py
-```
+  ```bash
+  python ./figure/fig8_data.py
+  ```
 
-The output image will be saved as `./figure/figure_7.png`.
+  Note that this process may take some time. Alternatively, you can skip this step and directly execute the following command, as we have provided the pre-calculated scores for your convenience:
 
-For Figure 8, which illustrates the proportion of questions that elicit biased responses across one to six LLMs, we first assess each question for biased responses on all six LLMs. The scores for each question are stored in the `score` folder. To calculate these scores, run the following file (note that this process may take some time):
+  ```bash
+  python ./figure/fig8.py
+  ```
 
-```bash
-python ./rq1/fig8_data.py
-```
+  The output image will be saved as `./figure/figure_8.png`.
 
-Alternatively, you can **skip** previous step and directly execute the following command, as we have provided the pre-calculated scores for your convenience:
+- **Table 4**: To generate this table, execute:
 
-```bash
-python ./rq1/fig8.py
-```
+  ```bash
+  python ./table4/table4.py
+  ```
 
-The output image will be saved as `./figure/figure_8.png`.
+  The results will be saved in `./results/without_role/table4.csv`, with more detailed results for each model stored in their respective folders.
 
+- **Comparison of Results**: To compare the results with those from previous analyses, execute:
 
-### RQ3
+  ```bash
+  python ./table4/comparison.py
+  ```
 
-This section contains the replication results for RQ3, corresponding to Table 4.
+  The comparison results will be saved in `./table4/comparison_result.csv`.
 
-To generate Table 4, execute
+- **Table 5**: To generate this table, run:
 
-```bash
-python ./rq3/table4.py
-```
+  ```bash
+  python ./table5/table5.py
+  ```
 
-The results will be saved in `./results/without_role/table4.csv`. More detailed results for each model will be stored in their respective folders within `./results/without_role`.
-
-To compare these results with those from RQ1, you can execute the following command:
-
-```bash
-python ./rq3/comparison.py
-```
-
-The comparison results will be saved in `./rq3/comparison_result.csv`.
-
-
-
-### RQ4
-
-In this section, we present the replication results for RQ4, corresponding to Table 5.
-
-To generate Table 5, run:
-
-```bash
-python ./rq4/table5.py
-```
-
-The results will be saved in `./rq4/table5.csv`.
+  The results will be saved in `./table5/table5.csv`.
 
 
 
