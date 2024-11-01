@@ -63,10 +63,6 @@ This section contains collected answers for both role-based and non-role-based q
 
 For each of the 11 attributes, we generate 50 roles for testing. Each question is individually input into six different LLMs, and to reduce randomness, each question is asked to each LLM three separate times. Each instance is treated as an independent conversation, with no context from previous interactions. This setup allows for three distinct rounds of questioning per LLM.
 
-In total, this process yields:
-
-**32,864 × 6 × 3 = 591,552 responses.**
-
 Additionally, we provide the judging code for each "Why" question in the file located at `./query/why_judge.py`.
 
 
