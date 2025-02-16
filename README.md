@@ -70,13 +70,13 @@ Additionally, we provide the judging code for each "Why" question in the file lo
 
 In this section, we provide all the code and data required to replicate the tables and figures from our study. Specifically, we have scripts for generating:
 
-- **Table 3**: Displays the number of biased responses detected by our benchmark across 11 demographic attributes and 3 question types for 6 LLMs during role-playing. To generate this table, execute:
+- **Table 2**: Displays the number of biased responses detected by our benchmark across 11 demographic attributes and 3 question types for 6 LLMs during role-playing. To generate this table, execute:
 
   ```bash
-  python ./table3/table3.py
+  python ./table2/table2.py
   ```
 
-  The results will be saved in `./results/role/table3.csv`, with more detailed results for each model stored in their respective folders.
+  The results will be saved in `./results/role/table2.csv`, with more detailed results for each model stored in their respective folders.
 
 - **Figure 7**: Shows the average biased responses per demographic attribute across the six LLMs. To generate this figure, execute:
 
