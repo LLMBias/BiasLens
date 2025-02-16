@@ -1,6 +1,7 @@
+
 # Benchmarking Bias in Large Language Models during Role-Playing
 
-Welcome to the online appendix for the paper titled "Benchmarking Bias in Large Language Models during Role-Playing." Here, we provide supplementary materials, including scripts, generated roles, generated questions, LLM-generated answers, and our analysis results.
+Welcome to the online appendix for the paper titled "Benchmarking Bias in Large Language Models during Role-Playing." Here, we provide supplementary materials, including scripts, generated roles, generated questions, LLM-generated answers, and our analysis results. This repository is under the terms of the MIT License.
 
 ## Environment Setup
 
@@ -78,51 +79,60 @@ In this section, we provide all the code and data required to replicate the tabl
 
   The results will be saved in `./results/role/table2.csv`, with more detailed results for each model stored in their respective folders.
 
-- **Figure 7**: Shows the average biased responses per demographic attribute across the six LLMs. To generate this figure, execute:
+- **Figure 3**: Illustrates the proportion of questions that elicit biased responses across one to six LLMs. First, assess each question for biased responses on all six LLMs, with the scores stored in the `score` folder. To calculate these scores, run:
 
   ```bash
-  python ./figure/fig7.py
-  ```
-
-  The output image will be saved as `./figure/figure_7.png`.
-
-- **Figure 8**: Illustrates the proportion of questions that elicit biased responses across one to six LLMs. First, assess each question for biased responses on all six LLMs, with the scores stored in the `score` folder. To calculate these scores, run:
-
-  ```bash
-  python ./figure/fig8_data.py
+  python ./figure/fig3_data.py
   ```
 
   Note that this process may take some time. Alternatively, you can skip this step and directly execute the following command, as we have provided the pre-calculated scores for your convenience:
 
   ```bash
-  python ./figure/fig8.py
+  python ./figure/fig3.py
   ```
 
-  The output image will be saved as `./figure/figure_8.png`.
+  The output image will be saved as `./figure/figure_3.png`.
 
-- **Table 4**: To generate this table, execute:
+- **Figure 4**: Shows the average biased responses per demographic attribute across the six LLMs. To generate this figure, execute:
+
+  ```bash
+  python ./figure/fig4.py
+  ```
+
+  The output image will be saved as `./figure/figure_4.png`.
+
+- **Figure 5**: Shows the bias types in bias-triggering questions. To generate this figure, execute:
+
+  ```bash
+  python ./figure/fig5.py
+  ```
+
+  The output image will be saved as `./figure/figure_5.png`.
+  
+
+- **Table 3**: To generate this table, execute:
+
+  ```bash
+  python ./table3/table3.py
+  ```
+
+  The results will be saved in `./results/without_role/table3.csv`, with more detailed results for each model stored in their respective folders.
+
+- **Comparison of Results**: To compare the results with those from previous analyses, execute:
+
+  ```bash
+  python ./table3/comparison.py
+  ```
+
+  The comparison results will be saved in `./table3/comparison_result.csv`.
+
+- **Table 4**: To generate this table, run:
 
   ```bash
   python ./table4/table4.py
   ```
 
-  The results will be saved in `./results/without_role/table4.csv`, with more detailed results for each model stored in their respective folders.
-
-- **Comparison of Results**: To compare the results with those from previous analyses, execute:
-
-  ```bash
-  python ./table4/comparison.py
-  ```
-
-  The comparison results will be saved in `./table4/comparison_result.csv`.
-
-- **Table 5**: To generate this table, run:
-
-  ```bash
-  python ./table5/table5.py
-  ```
-
-  The results will be saved in `./table5/table5.csv`.
+  The results will be saved in `./table5/table4.csv`.
 
 
 
