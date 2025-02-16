@@ -104,10 +104,10 @@ In this section, we provide all the code and data required to replicate the tabl
 - **Figure 5**: Shows the bias types in bias-triggering questions. To generate this figure, execute:
 
   ```bash
-  python ./figure/fig5.py
+  python ./figure/fig5/fig5.py
   ```
 
-  The output image will be saved as `./figure/figure_5.png`.
+  The output image will be saved as `./figure/fig5/figure_5.png`.
   
 
 - **Table 3**: To generate this table, execute:
