@@ -31,7 +31,7 @@ After reviewing, 136 questions were removed for containing placeholder terms lik
 - **10,917 Choice questions**
 - **10,972 Why questions**
 
-All questions are organized by attribute in individual CSV files in the `./questions/role` folder. Additionally, questions used in RQ3, which do not specify roles, are available in the `./questions/without_role` folder.
+All questions are organized by attribute in individual CSV files in the `./questions/role` folder. Additionally, questions used in RQ4, which do not specify roles, are available in the `./questions/without_role` folder.
 
 ## Query Scripts
 
@@ -74,65 +74,65 @@ In this section, we provide all the code and data required to replicate the tabl
 - **Table 3**: Displays the number of biased responses detected by our benchmark across 11 demographic attributes and 3 question types for 6 LLMs during role-playing. To generate this table, execute:
 
   ```bash
-  python ./table2/table2.py
+  python ./table3/table3.py
   ```
 
-  The results will be saved in `./results/role/table2.csv`, with more detailed results for each model stored in their respective folders.
+  The results will be saved in `./table3/table3.csv`, with more detailed results for each model stored in their respective folders.
 
 - **Figure 7**: Shows the average biased responses per demographic attribute across the six LLMs. To generate this figure, execute:
 
   ```bash
-  python ./figure/fig4.py
+  python ./figure/fig7.py
   ```
 
-  The output image will be saved as `./figure/figure_4.png`.
+  The output image will be saved as `./figure/figure_7.png`.
 - **Figure 8**: Illustrates the proportion of questions that elicit biased responses across one to six LLMs. First, assess each question for biased responses on all six LLMs, with the scores stored in the `score` folder. To calculate these scores, run:
 
   ```bash
-  python ./figure/fig3_data.py
+  python ./figure/fig8_data.py
   ```
 
   Note that this process may take some time. Alternatively, you can skip this step and directly execute the following command, as we have provided the pre-calculated scores for your convenience:
 
   ```bash
-  python ./figure/fig3.py
+  python ./figure/fig8.py
   ```
 
-  The output image will be saved as `./figure/figure_3.png`.
+  The output image will be saved as `./figure/figure_8.png`.
 
 
 - **Figure 10**: Shows the bias types in bias-triggering questions. To generate this figure, execute:
 
   ```bash
-  python ./figure/fig5/fig5.py
+  python ./figure/fig10/fig10.py
   ```
 
-  The output image will be saved as `./figure/fig5/figure_5.png`.
+  The output image will be saved as `./figure/fig10/figure_10.png`.
   
 
 - **Table 4**: To generate this table, execute:
 
   ```bash
-  python ./table3/table3.py
+  python ./table4/table4.py
   ```
 
-  The results will be saved in `./results/without_role/table3.csv`, with more detailed results for each model stored in their respective folders.
+  The results will be saved in `./table4/table4.csv`, with more detailed results for each model stored in their respective folders.
 
 - **Comparison of Results**: To compare the results with those from previous analyses, execute:
 
   ```bash
-  python ./table3/comparison.py
+  python ./table4/comparison.py
   ```
 
-  The comparison results will be saved in `./table3/comparison_result.csv`.
+  The comparison results will be saved in `./table4/comparison_result.csv`.
 
 - **Table 5**: To generate this table, run:
 
   ```bash
-  python ./table4/table4.py
+  python ./table5/table5.py
   ```
 
-  The results will be saved in `./table5/table4.csv`.
+  The results will be saved in `./table5/table5.csv`.
 
 
 
