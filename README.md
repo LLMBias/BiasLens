@@ -71,7 +71,7 @@ Additionally, we provide the judging code for each "Why" question in the file lo
 
 In this section, we provide all the code and data required to replicate the tables and figures from our study. Specifically, we have scripts for generating:
 
-- **Table 2**: Displays the number of biased responses detected by our benchmark across 11 demographic attributes and 3 question types for 6 LLMs during role-playing. To generate this table, execute:
+- **Table 3**: Displays the number of biased responses detected by our benchmark across 11 demographic attributes and 3 question types for 6 LLMs during role-playing. To generate this table, execute:
 
   ```bash
   python ./table2/table2.py
@@ -79,7 +79,14 @@ In this section, we provide all the code and data required to replicate the tabl
 
   The results will be saved in `./results/role/table2.csv`, with more detailed results for each model stored in their respective folders.
 
-- **Figure 3**: Illustrates the proportion of questions that elicit biased responses across one to six LLMs. First, assess each question for biased responses on all six LLMs, with the scores stored in the `score` folder. To calculate these scores, run:
+- **Figure 7**: Shows the average biased responses per demographic attribute across the six LLMs. To generate this figure, execute:
+
+  ```bash
+  python ./figure/fig4.py
+  ```
+
+  The output image will be saved as `./figure/figure_4.png`.
+- **Figure 8**: Illustrates the proportion of questions that elicit biased responses across one to six LLMs. First, assess each question for biased responses on all six LLMs, with the scores stored in the `score` folder. To calculate these scores, run:
 
   ```bash
   python ./figure/fig3_data.py
@@ -93,15 +100,8 @@ In this section, we provide all the code and data required to replicate the tabl
 
   The output image will be saved as `./figure/figure_3.png`.
 
-- **Figure 4**: Shows the average biased responses per demographic attribute across the six LLMs. To generate this figure, execute:
 
-  ```bash
-  python ./figure/fig4.py
-  ```
-
-  The output image will be saved as `./figure/figure_4.png`.
-
-- **Figure 5**: Shows the bias types in bias-triggering questions. To generate this figure, execute:
+- **Figure 10**: Shows the bias types in bias-triggering questions. To generate this figure, execute:
 
   ```bash
   python ./figure/fig5/fig5.py
@@ -110,7 +110,7 @@ In this section, we provide all the code and data required to replicate the tabl
   The output image will be saved as `./figure/fig5/figure_5.png`.
   
 
-- **Table 3**: To generate this table, execute:
+- **Table 4**: To generate this table, execute:
 
   ```bash
   python ./table3/table3.py
@@ -126,7 +126,7 @@ In this section, we provide all the code and data required to replicate the tabl
 
   The comparison results will be saved in `./table3/comparison_result.csv`.
 
-- **Table 4**: To generate this table, run:
+- **Table 5**: To generate this table, run:
 
   ```bash
   python ./table4/table4.py
