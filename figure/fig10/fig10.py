@@ -79,5 +79,5 @@ for label in colorbar.ax.get_yticklabels():
     label.set_fontweight('bold')  # 使图例数字加粗
 
 plt.tight_layout()
-plt.savefig('./fig5.png', dpi=300)
+plt.savefig('./fig10.png', dpi=300)
 plt.show()

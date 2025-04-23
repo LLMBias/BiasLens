@@ -10,8 +10,8 @@ final_output_data = {model: {attribute: {'Yes/No': 0, 'Choice': 0, 'Why': 0} for
 
 for model in models:
     # Define paths
-    input_directory = f'./answers/without_role/{model}'
-    output_csv_directory = f'./results/without_role/{model}'
+    input_directory = f'./answers/role/{model}'
+    output_csv_directory = f'./results/role/{model}'
     stat_file_path = os.path.join(output_csv_directory, f'seeds_{model}_statistics.txt')
 
     # Create output directory if it does not exist
@@ -228,7 +228,7 @@ for model in models:
 
 # Create and save the final DataFrame
 final_df = pd.DataFrame(output_rows, columns=columns)
-final_csv_path = './results/without_role/table4.csv'
+final_csv_path = './table3/table3.csv'
 final_df.to_csv(final_csv_path, index=False)
 
 print(f"Final summary statistics saved to {final_csv_path}.")
