@@ -1,5 +1,5 @@
 
-# Benchmarking Bias in Large Language Models during Role-Playing
+# Fairness testing of Large Language Models during Role-Playing
 
 Welcome to the online appendix for the paper titled "Benchmarking Bias in Large Language Models during Role-Playing." Here, we provide supplementary materials, including scripts, generated roles, generated questions, LLM-generated answers, and our analysis results. This repository is under the terms of the MIT License.
 
