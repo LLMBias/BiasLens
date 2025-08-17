@@ -3,7 +3,7 @@ import csv
 import os
 
 # 设置OpenAI API密钥
-openai.api_key = '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'
+openai.api_key = 'Your Key'
 
 # 第一步：从每个"Attribute"中获取50个社会角色
 
